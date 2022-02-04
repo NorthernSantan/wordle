@@ -136,8 +136,8 @@ section#canvas {
 }
 
 .keypad-key {
-    height: 2.5rem;
-    width: 2rem;
+    height: 3rem;
+    width: 2.5rem;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
