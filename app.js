@@ -100,7 +100,7 @@ const generateScoreCard = async () => {
 
 const showBanner = () => {
   const banner = document.querySelector("#banner");
-  banner.style.display = "flex";
+  setTimeout(() => {banner.style.display = "flex";}, 1000);
   document.querySelector('.share').onclick = generateScoreCard;
 }
 
