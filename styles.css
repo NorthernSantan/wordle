@@ -6,6 +6,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 header {
@@ -71,7 +73,7 @@ section#canvas {
 }
 
 .board-row {
-    height: 2.5rem;
+    height: 2rem;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -79,10 +81,10 @@ section#canvas {
 }
 
 .board-column {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     border: 2px solid #787575;
-    margin: 2px;
+    margin: 1px;
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -135,13 +137,13 @@ section#canvas {
 }
 
 .keypad-key {
-    height: 20px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
-    padding: 5px;
-    margin: 2px;
+    padding: 3px;
+    margin: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +163,7 @@ section#canvas {
 
 .keypad-special-key {
     height: 30px;
-    width: 50px;
+    width: 40px;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
@@ -182,10 +184,10 @@ section#canvas {
 #banner, #answer-banner {
     position: fixed;
     height: 70vh;
-    width: 50vw;
-    background-color: rgba(0,0,0,0.7);
+    width: 70%;
+    background-color: rgba(0,0,0,0.8);
     z-index: 99;
-    left: 25%;
+    left: 15%;
     top: 20%;
     border-radius: 10px;
     color: yellow;
