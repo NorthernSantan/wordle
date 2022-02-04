@@ -73,7 +73,7 @@ section#canvas {
 }
 
 .board-row {
-    height: 2rem;
+    height: 2.5rem;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -81,8 +81,8 @@ section#canvas {
 }
 
 .board-column {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: 2px solid #787575;
     margin: 1px;
     position: relative;
@@ -136,13 +136,13 @@ section#canvas {
 }
 
 .keypad-key {
-    height: 2rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2rem;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
     padding: 3px;
-    margin: 2px;
+    margin: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
