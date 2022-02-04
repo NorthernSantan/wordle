@@ -147,6 +147,8 @@ section#canvas {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .grey {
@@ -161,8 +163,8 @@ section#canvas {
 }
 
 .keypad-special-key {
-    height: 30px;
-    width: 40px;
+    height: 3rem;
+    width: 4rem;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
@@ -172,6 +174,8 @@ section#canvas {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .disabled-button {
