@@ -45,7 +45,7 @@ section#canvas {
     background-color: #1b1b1b;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 60px);
@@ -85,12 +85,12 @@ section#canvas {
     width: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 .board-column {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     border: 2px solid #787575;
     margin: 1px;
     position: relative;
@@ -123,11 +123,11 @@ section#canvas {
     border: 2px solid #787575;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     border-radius: 10px;
-    flex: 0.5;
+    /* flex: 0.5; */
     background-color: rgba(48,112, 114, 0.4);
-    max-width: 90%;
+    max-width: 97%;
 }
 
 #keypad #alphabets {
@@ -135,7 +135,7 @@ section#canvas {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 400px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -144,8 +144,8 @@ section#canvas {
 }
 
 .keypad-key {
-    height: 3rem;
-    width: 2.5rem;
+    height: 2.5rem;
+    width: 2rem;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
@@ -171,8 +171,8 @@ section#canvas {
 }
 
 .keypad-special-key {
-    height: 3rem;
-    width: 4rem;
+    height: 2rem;
+    width: 3rem;
     background: #e7e3e3;
     color: #000;
     border-radius: 5px;
