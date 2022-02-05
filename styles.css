@@ -48,7 +48,7 @@ section#canvas {
     /* overflow: auto; */
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
 }
 
 #messages {
