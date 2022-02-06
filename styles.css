@@ -45,8 +45,7 @@ section#canvas {
     background-color: #1b1b1b;
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: calc(100vh - 60px);
 }
@@ -78,6 +77,7 @@ section#canvas {
     justify-content: center;
     align-items: center;
     flex: 0.4;
+    padding: 10px;
 }
 
 .board-row {
@@ -85,13 +85,13 @@ section#canvas {
     width: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 .board-column {
-    height: 2rem;
-    width: 2rem;
-    border: 2px solid #787575;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid #c4bebe;
     margin: 1px;
     position: relative;
     transition: transform 0.6s;
@@ -112,6 +112,7 @@ section#canvas {
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding-left: 1px;
   }
 
 .board-column-back{
