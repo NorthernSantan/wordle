@@ -30,7 +30,6 @@ const Wordle = function () {
     }, 2000);
   }
 
-
   const createBoard = () => {
     const board = document.querySelector('#board');
     board.innerHTML = "";
