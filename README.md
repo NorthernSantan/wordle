@@ -6,7 +6,8 @@ Breaking down Wordle in vanilla JavaScript
 ## Features
 - Unique puzzle everyday.
 - Player can choose to play a random puzzle.
-- User can share the score. (For now we are copying text to the clipboard, ideally we should prompt the share feature if the browser supports it).
+- User can share the score. (For now we are copying text to the clipboard,
+  ideally we should prompt the share feature if the browser supports it).
 
 ## Building Blocks
 - Word list (used for puzzle answers).
@@ -42,7 +43,8 @@ Breaking down Wordle in vanilla JavaScript
 - Check if the current word has 5 letters, else show a message saying "not enough letters".
 - If condition above passes, check if the current word is a valid word from our set of valid words.
 - If all conditions above passes, check each letter.
-- If a letter is at the correct index in the answer, mark the letter as green in the board & on screen keypad. (Check the code for flip animation).
+- If a letter is at the correct index in the answer, mark the letter as green in the board & on screen keypad.
+  (Check the code for flip animation).
 - Else if a letter is partial match (exists in the answer but the index doesn't match), mark it yellow.
 - Else mark that letter, grey.
 
@@ -60,13 +62,26 @@ Breaking down Wordle in vanilla JavaScript
 - Getting a unique puzzle for a day
 ```
 - Declare a start date (just the date no time) for the game.
-- From today's date (just the date no time), get the difference from the start date in terms of days. Pick the day diff as index from our word list.
+- From today's date (just the date no time), get the difference from the start date in terms of days. 
+  Pick the day diff as index from the word list.
 ```
 
 - Getting the list of valid words
 ```
 - I used an open API `https://v3.wordfinderapi.com/api/search?page_size=100&page_token=2&length=5&dictionary=wwf`
 - Credit: https://word.tips/five-letter-words/
+```
+
+- Running locally
+```
+- npm i, in the root folder
+- npm run dev
+- hit localhost:3000
+```
+
+- Generating deployable bundle
+```
+npm run build
 ```
 
 ## All set? Go create your own wordle! 
