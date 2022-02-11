@@ -50,7 +50,7 @@ Breaking down Wordle in vanilla JavaScript
 - Else if a letter is partial match (exists in the answer but the index doesn't match), mark it yellow.
 - Else mark that letter, grey.
 
-- If the entered word is an exact match, show a floating message based on the current row. SHow banner to share the score.
+- If the entered word is an exact match, show a floating message based on the current row. Show banner to share the score.
 - If the current row count has reached max attempts, show answer.
 - If both the above conditions are not true, move to the next row.
 ```
