@@ -1,5 +1,7 @@
 # wordle
 Breaking down Wordle in vanilla JavaScript
+<br>
+<b>Demo: https://gauravbehere.github.io/wordle/<b>
 <hr>
 <img height="400" src="https://media-exp1.licdn.com/dms/image/C5622AQFjbn8pUlzMew/feedshare-shrink_800/0/1644127192299?e=1647475200&v=beta&t=ZuJmFOWhh8BWPnTjCh-xiZ2Mx_qnYUI2yHUUAfpPFAE">
 
