@@ -4,3 +4,7 @@ module.exports = {
     outDir: './docs'
   }
 }
+
+export default {
+  base: 'http://localhost:3000/'
+}
