@@ -2,7 +2,7 @@
 Forked from https://github.com/gauravbehere/wordle
 
 ## Inteded for Promposal
-
+This repository is inteded to be a promposal. The remainig readme delves into structure and is the same as the original repository's readme.
 <br>
 <b>Demo: https://northernsantan.github.io/wordle/</b>
 <hr>
