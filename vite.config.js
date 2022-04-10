@@ -6,5 +6,5 @@ module.exports = {
 }
 
 export default {
-  base: 'http://localhost:3000/'
+  base: '/<REPO>/'
 }
