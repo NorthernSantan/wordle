@@ -18,7 +18,7 @@ const Wordle = function () {
   }
 
   const checkIfItsAMatch = (word) => {
-    return String(word).toLowerCase() === answer;
+    return String(word).toLowerCase() == answer;
   }
 
   const showMessage = (msg) => {
@@ -122,7 +122,12 @@ const Wordle = function () {
       const lettersInAnswer = answer.split("");
       const lineScore = [];
       letters.forEach((letter, index) => {
-        if (letter.toLowerCase() === lettersInAnswer[index].toLowerCase()) {
+        if (letter == '?'&& lettersInAnswer[index]) {
+          document.querySelector("#column-back-" + currentRow + "-" + index).classList.add('green');
+          document.querySelector("#column-" + currentRow + "-" + index).classList.add('flipped');
+          document.querySelector("#keypad-key-?").classList.add('green');
+          lineScore.push("green");
+        } else if (letter.toLowerCase() === lettersInAnswer[index].toLowerCase()) {
           // exact match turn green
           document.querySelector("#column-back-" + currentRow + "-" + index).classList.add('green');
           document.querySelector("#column-" + currentRow + "-" + index).classList.add('flipped');
@@ -210,6 +215,7 @@ const Wordle = function () {
 
   const startGame = (random = false) => {
     currentRow = 0;
+    console.log ("Starting game")
     currentColumn = 0;
     currentWord = [];
     scoreCard = [];

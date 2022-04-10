@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
     rel="stylesheet">
-  <meta name="description" content="Corporate wordle. A new puzzle is available each day.">
+  <meta name="description" content="Lucy's wordle.">
   <link rel="stylesheet" href="./styles.css">
-  <title>Corporate Wordle</title>
+  <title>Lucy's Wordle</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -28,9 +28,24 @@
 
 <body>
   <header>
-    <div>Corporate Wordle</div>🟩🟨⬛<div id='sub-header'>Words from our office lingo!</div>
+    <div>Lucy's Wordle</div>🟩🟨⬛
   </header>
   <section id='canvas'>
+    <br>
+    <script>
+      let index = 0;
+      let text = "Lucy, will you go with me to";
+      let speed = 50;
+
+      window.onload = function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("prompt").innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+    <div id='prompt'></div>
     <div id='messages'></div>
     <div id='board'></div>
     <div id='keypad'>
@@ -42,7 +57,6 @@
     <div>
       Congratulations! You did it.
     </div>
-    <div class='banner-msg'>Share your score with friends & spread word about the corporate wordle ;)</div>
     <div class='share'>Share</div>
     <div>Come back tomorrow for a new puzzle.</div>
     <div class='divider'></div>
@@ -61,7 +75,6 @@
     <div class='share' id='restart-random' onclick="startGame(true)">Restart with a random wordle</div>
   </section>
   <footer>
-    <div>Made with ♥ in India by <a href="https://www.linkedin.com/in/gauravbehere/"> Gaurav Behere</a></div>
     <div>Inspired by <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a></div>
     <div><a href="https://github.com/gauravbehere/wordle">Source Code</a></div>
   </footer>
